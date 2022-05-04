@@ -57,25 +57,25 @@ body {
 
 /* ---header---*/
 
-.container-nav {
+.header {
   border-bottom: 1px solid rgba(236, 236, 236, 1);
 }
 
-.flex-nav {
+.navigation {
   height: 80px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.navigation {
+.menu {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
 }
 
-.header-logo {
+.menu__logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -97,20 +97,20 @@ body {
   color: var(--color-blak-000000);
 }
 
-.header-menu {
+.menu__list {
   display: flex;
 }
 
-.header-menu-item {
+.menu__item {
   margin-left: 50px;
 
 }
 
-.header-menu-item:first-child {
+.menu__text:first-child {
   margin-left: 0;
 }
 
-.header-menu-text {
+.menu__text {
   position: relative;
   font-weight: 500;
   font-size: 14px;
@@ -122,7 +122,11 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.current::after{
+.menu__text--focusblue {
+  color: var(--focus-color-blue);
+}
+
+.menu__text--focusblue::after{
   content: ' ';
 
   position: absolute;
@@ -139,12 +143,12 @@ body {
   transform-origin: bottom left;
 }
 
-.header-contacts {
+.contacts {
   display: flex;
   align-items: center;
 }
 
-.header-contacts-item {
+.contacts__item {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -160,31 +164,27 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-contacts-item:last-child {
+.contacts__item:last-child {
   margin-right: 0;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-.current {
+.contacts__item:hover,
+.contacts__item:focus,
+.menu__text:hover,
+.menu__text:focus {
   color: var(--focus-color-blue);
 }
 
-.header-contacts-item:hover,
-.header-contacts-item:focus,
-.header-menu-text:hover,
-.header-menu-text:focus {
-  color: var(--focus-color-blue);
-}
-
-.header-contacts-item-img{
+.contacts__img{
   fill: currentColor;
   margin-right: 10px;
 }
 
-
 /* ---first section---*/
+
 .first-section {
   width: 1600px;
   background-color: var(--color-dark-2f303a);
