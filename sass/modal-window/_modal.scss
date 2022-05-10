@@ -1,0 +1,227 @@
+.modal {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 528px;
+    min-height: 581px;
+    padding: 40px;
+
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 8px;
+    top: 8px;
+    /* fill: currentColor; */
+    background: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
+    /* transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+}
+
+.modal-close-btn {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    fill: #000;
+    width: 11px;
+    height: 11px;
+}
+
+.modal-close:focus + .modal-close-btn
+
+/*+*/
+.modal-close:hover + .modal-close-btn {
+    fill: var(--focus-color-blue);
+}
+
+.modal-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-title {
+    padding: 0;
+    margin: 0 0 2px 0;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--color-dark-212121);
+}
+
+.modal-input {
+    margin-top: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 4px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.67;
+    /* identical to box height */
+    letter-spacing: 0.01em;
+    color: var(--color-grey-757575);
+
+    span {
+        width: 16px;
+        height: 15px;
+        display: flex;
+    
+        border: 2px solid;
+        border-color: #212121;
+        border-radius: 2px;
+        margin-left: 15px;
+        margin-right: 7px;
+    
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+label:focus-within+input,
+label:focus-within+textarea {
+    border: 1px solid var(--focus-color-blue);
+}
+
+input {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding-left: 42px;
+    background-color: transparent;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: none;
+
+    &:focus,
+    &:hover {
+        border: 1px solid var(--focus-color-blue);
+    }
+
+    &:focus-within {
+        border: 2px solid var(--focus-color-blue);
+    }
+}
+
+.modal-input-cont {
+    position: relative;
+}
+
+.modal-input-icon {
+    position: absolute;
+    top: 50%;
+    transform: translate(15px, -50%);
+
+    width: 18px;
+    height: 18px;
+    fill: var(--color-dark-212121);
+}
+
+input:focus+.modal-input-icon,
+input:hover+.modal-input-icon {
+    fill: var(--focus-color-blue);
+}
+
+.modal-comment-text {
+    width: 100%;
+    height: 120px;
+    padding: 12px 16px;
+    resize: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: var(--color-grey-757575);
+
+    &:focus,
+    &:hover {
+        border: 1px solid var(--focus-color-blue);
+    }
+
+    &::placeholder {
+        outline: transparent;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.01em;
+    
+        color: #75757580;
+    }
+}
+
+.modal-input-ch {
+        margin: 10px 0 30px 0;
+    }
+
+.modal-link {
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--color-grey-757575);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.modal-input-check-mark {
+    fill: transparent;
+    width: 11px;
+    height: 8px;
+}
+
+.modal-input-check-hidden:checked+.modal-link span {
+    background-color: var(--focus-color-blue);
+    border: none;
+}
+
+.modal-input-check-hidden:checked+.modal-link .modal-input-check-mark {
+    fill: var(--color-white-ffffff);
+}
+
+.modal-link-doc {
+    color: var(--focus-color-blue);
+    text-decoration: underline;
+}
+
+.modal-input-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.modal-btn {
+    width: 200px;
+    height: 50px;
+    background-color: var(--focus-color-blue);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.149);
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus,
+    &:hover {
+        background-color: #188CE8;
+    }
+}
