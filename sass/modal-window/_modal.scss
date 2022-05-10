@@ -41,14 +41,13 @@
     height: 11px;
 }
 
-.modal-close:focus + .modal-close-btn
-
-/*+*/
+.modal-close:focus + .modal-close-btn /*+*/
 .modal-close:hover + .modal-close-btn {
     fill: var(--focus-color-blue);
 }
 
 .modal-form {
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
 }
@@ -64,7 +63,7 @@
     color: var(--color-dark-212121);
 }
 
-.modal-input {
+.modal-input:not(:first-child) {
     margin-top: 10px;
 }
 
@@ -87,7 +86,6 @@ label {
         border-color: #212121;
         border-radius: 2px;
         margin-left: 15px;
-        margin-right: 7px;
     
         justify-content: center;
         align-items: center;
@@ -109,6 +107,8 @@ input {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     outline: none;
+
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:focus,
     &:hover {
@@ -154,6 +154,8 @@ input:hover+.modal-input-icon {
     letter-spacing: 0.01em;
     color: var(--color-grey-757575);
 
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     &:focus,
     &:hover {
         border: 1px solid var(--focus-color-blue);
@@ -171,7 +173,7 @@ input:hover+.modal-input-icon {
 }
 
 .modal-input-ch {
-        margin: 10px 0 30px 0;
+        margin: 10px 0 0 0;
     }
 
 .modal-link {
@@ -210,6 +212,7 @@ input:hover+.modal-input-icon {
 .modal-input-btn {
     display: flex;
     justify-content: center;
+    margin-top: 30px;
 }
 
 .modal-btn {
