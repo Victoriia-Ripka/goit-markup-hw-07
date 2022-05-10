@@ -193,13 +193,15 @@ input {
     height: 8px;
 }
 
-.modal-input-check-hidden:checked+.modal-link span {
-    background-color: var(--focus-color-blue);
-    border: none;
-}
+.modal-input-check-hidden{
+    &:checked+.modal-link span {
+        background-color: var(--focus-color-blue);
+        border: none;
+    }
 
-.modal-input-check-hidden:checked+.modal-link .modal-input-check-mark {
-    fill: var(--color-white-ffffff);
+    &:checked+.modal-link .modal-input-check-mark {
+        fill: var(--color-white-ffffff);
+    }
 }
 
 .modal-link-doc {
