@@ -13,39 +13,8 @@
   flex-grow: 1; 
 }
 
-.hero__title {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--color-white-ffffff);
-  width: 700px;
-
-  margin: 0 auto;
-  margin-bottom: 30px;
-}
-
 .hero__button-wrapper {
   display: flex;
   justify-content: center;
 }
 
-.btn {
-  background-color: var(--focus-color-blue);
-  color: var(--color-white-ffffff);
-  font-family: Roboto;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-  cursor: pointer;
-  min-width: 200px;
-  border: transparent;
-  border-radius: 4px;
-
-  padding: 10px 32px;
-}

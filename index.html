@@ -23,7 +23,7 @@
         <div class="line container">
             <div class="navigation">
                 <nav class="menu">
-                    <a class="logo menu__logo link" href="./index.html" title="logo" target="_blank">
+                    <a class="logo logo__menu link" href="./index.html" title="logo" target="_blank">
                         Web<span class="logo-header">Studio</span>
                     </a>
                     <ul class="menu__list list">
@@ -63,7 +63,7 @@
         <!--First section-->
         <section class="hero">
             <div class="container">
-                <h1 class="hero__title">
+                <h1 class="title title--hero">
                     Эффективные решения для вашего бизнеса
                 </h1>
                 <div class="hero__button-wrapper">
@@ -355,7 +355,7 @@
         <div class="footer-info container">
             <div class="web-contacts">
                 <a class="logo link" href="index.html" title="logo" target="_blank">Web<span
-                        class="logo-footer link">Studio</span> </a>
+                        class="logo__footer link">Studio</span> </a>
                 <address class="web-contacts__list">
                     <p class="web-contacts__address">г. Киев, пр-т Леси Украинки, 26</p>
                     <ul class="web-contacts__contacts list">
@@ -367,7 +367,7 @@
                 </address>
             </div>
             <div class="web-social">
-                <p class="web-social__title">присоединяйтесь</p>
+                <p class="title title--web-social">присоединяйтесь</p>
                 <ul class="social list">
                     <li class="social__item">
                         <a class="social__link link" href="#">
@@ -400,10 +400,10 @@
                 </ul>
             </div>
             <div class="web-form">
-                <p class="web-social__title">Подпишитесь на рассылку</p>
+                <p class="title title--web-social">Подпишитесь на рассылку</p>
                 <form class="sign-up-form">
                     <input class="sign-up-form__input" type="email" name="E-mail" id="E-mail" placeholder="E-mail">
-                    <button class="btn sign-up-form__button" type="button">Подписаться
+                    <button class="btn btn--sign-up-form" type="button">Подписаться
                         <svg class="sign-up-form__icon">
                             <use href="./images/icons/symbol-defs.svg#icon-tg-footer"></use>
                         </svg>
@@ -420,15 +420,15 @@
                     <use href="./images/icons/symbol-defs.svg#icon-modal-cross"></use>
                 </svg>  
             </button>
-            <p class="modal-title">
+            <p class="title title--modal">
                 Оставьте свои данные, мы вам перезвоним
             </p>
             <form class="modal-form">
 
                 <div class="modal-input">
-                    <label for="name">Имя</label>
+                    <label class="modal-input__label" for="name">Имя</label>
                     <div class="modal-input-cont">
-                        <input type="text" name="name" id="name" required>
+                        <input class="modal-input__input" type="text" name="name" id="name" required>
                         <svg class="modal-input-icon">
                             <use href="./images/icons/symbol-defs.svg#icon-modal-name"></use>
                         </svg>
@@ -437,9 +437,9 @@
                 </div>
 
                 <div class="modal-input">   
-                    <label for="tel">Телефон</label>
+                    <label class="modal-input__label" for="tel">Телефон</label>
                     <div class="modal-input-cont">
-                        <input type="tel" name="tel" id="tel" required>
+                        <input class="modal-input__input" type="tel" name="tel" id="tel" required>
                         <svg class="modal-input-icon">
                             <use href="./images/icons/symbol-defs.svg#icon-modal-phone"></use>
                         </svg>
@@ -447,9 +447,9 @@
                 </div>
 
                 <div class="modal-input">  
-                    <label for="email">Почта</label>
+                    <label class="modal-input__label" for="email">Почта</label>
                     <div class="modal-input-cont">
-                        <input type="email" name="email" id="email" required>
+                        <input class="modal-input__input" type="email" name="email" id="email" required>
                         <svg class="modal-input-icon">
                             <use href="./images/icons/symbol-defs.svg#icon-modal-email"></use>
                         </svg>
@@ -457,14 +457,14 @@
                  </div>
 
                 <div class="modal-input">   
-                    <label for="comment">Комментарий</label>
-                    <textarea class="modal-comment-text" name="comment" id="comment" placeholder="Введите текст"></textarea>
+                    <label class="modal-input__label" for="comment">Комментарий</label>
+                    <textarea class="modal-input__textarea modal-comment-text" name="comment" id="comment" placeholder="Введите текст"></textarea>
                 </div>
 
                 <div class="modal-input-ch">   
                     <input class="modal-input-check-hidden visually-hidden" type="checkbox"  id="privacy-check" name="privacy-check" required >
-                    <label class="modal-link" for="privacy-check">
-                        <span>
+                    <label class="modal-input__label modal-input__label--check modal-link" for="privacy-check">
+                        <span class="modal-input__span">
                             <svg class="modal-input-check-mark">
                                 <use href="./images/icons/symbol-defs.svg#icon-mark"></use>
                             </svg>
@@ -472,7 +472,7 @@
                         Соглашаюсь с рассылкой и принимаю <a class="modal-link-doc">Условия договора</a></label>
                 </div>
 
-                <button type="submit" class="btn modal-btn">Отправить</button>
+                <button type="submit" class="btn btn--modal">Отправить</button>
             </form>
         </div>
     </div>
