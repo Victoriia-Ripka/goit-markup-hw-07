@@ -23,7 +23,6 @@
     height: 30px;
     right: 8px;
     top: 8px;
-    fill: currentColor; /**/
     background: transparent;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
@@ -35,8 +34,9 @@
         border: 1px solid var(--focus-color-blue);
     }
 
-    &:focus+.modal-close-btn,
-    &:hover+.modal-close-btn {
+    &:focus .modal-close-btn, 
+    // +
+    &:hover .modal-close-btn {
         fill: var(--focus-color-blue);
     }
 }
