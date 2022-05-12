@@ -213,13 +213,14 @@ textarea {
     text-decoration: underline;
 }
 
-.modal-input-btn {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-}
+// .modal-input-btn {
+//     display: flex;
+//     justify-content: center;
+//     margin-top: 30px;
+// }
 
 .modal-btn {
+    margin: 30px auto 0px;
     width: 200px;
     height: 50px;
     background-color: var(--focus-color-blue);
