@@ -266,12 +266,11 @@ body {
 .sign-up-form__input {
   display: inline-block;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   width: 360px;
-  height: 50px;
   padding-left: 15px;
+  background-color: transparent;
   margin-right: 10px;
   font-weight: 400;
   font-size: 16px;
@@ -762,8 +761,10 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  /**/
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-close:focus, .modal-close:hover {
+  border: 1px solid var(--focus-color-blue);
 }
 .modal-close:focus + .modal-close-btn .modal-close:hover + .modal-close-btn {
   fill: var(--focus-color-blue);
@@ -774,9 +775,10 @@ body {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  fill: #000;
+  fill: var(--color-dark-212121);
   width: 11px;
   height: 11px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form {
@@ -798,6 +800,9 @@ body {
   letter-spacing: 0.01em;
   color: var(--color-grey-757575);
 }
+.modal-input__label:focus-within + .modal-input__input, .modal-input__label:focus-within + .modal-input__textarea {
+  border: 1px solid var(--focus-color-blue);
+}
 .modal-input__label .modal-input__span {
   width: 16px;
   height: 15px;
@@ -809,13 +814,18 @@ body {
   margin-right: 10px;
   justify-content: center;
   align-items: center;
-}
-.modal-input__label:focus-within + input, .modal-input__label:focus-within + textarea {
-  border: 1px solid var(--focus-color-blue);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input__label--check {
   font-size: 14px;
+}
+.modal-input__label--check:focus + .modal-input__span {
+  border: 2px solid var(--focus-color-blue);
+}
+
+.modal-input-cont {
+  position: relative;
 }
 
 .modal-input__input,
@@ -845,10 +855,6 @@ body {
   fill: var(--focus-color-blue);
 }
 
-.modal-input-cont {
-  position: relative;
-}
-
 .modal-input-icon {
   position: absolute;
   top: 50%;
@@ -861,7 +867,6 @@ body {
 
 .modal-comment-text {
   outline: transparent;
-  /*for what?*/
   width: 100%;
   height: 120px;
   padding: 12px 16px;
@@ -913,7 +918,7 @@ body {
   height: 8px;
 }
 
-.modal-input-check-hidden:checked + .modal-link span {
+.modal-input-check-hidden:checked + .modal-link .modal-input__span {
   background-color: var(--focus-color-blue);
   border: none;
 }
