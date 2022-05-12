@@ -95,7 +95,8 @@ label {
     }
 }
 
-input {
+input,
+textarea {
     // position: relative;
     display: block;
     width: 100%;
@@ -112,14 +113,13 @@ input {
     &:hover {
         border: 1px solid var(--focus-color-blue);
     }
+    &:focus-within {
+        border: 2px solid var(--focus-color-blue);
+    }
 
     &:focus+.modal-input-icon,
     &:hover+.modal-input-icon {
         fill: var(--focus-color-blue);
-    }
-
-    &:focus-within {
-        border: 2px solid var(--focus-color-blue);
     }
 }
 
@@ -159,6 +159,9 @@ input {
     &:hover {
         border: 1px solid var(--focus-color-blue);
     }
+    &:focus-within {
+        border: 2px solid var(--focus-color-blue);
+    }
 
     &::placeholder {
         outline: transparent;
@@ -168,10 +171,6 @@ input {
         letter-spacing: 0.01em;
     
         color: #75757580;
-    }
-
-    &:focus-within {
-        border: 2px solid var(--focus-color-blue);
     }
 }
 
