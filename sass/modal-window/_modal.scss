@@ -35,7 +35,7 @@
         border: 1px solid var(--focus-color-blue);
     }
 
-    &:focus+.modal-close-btn
+    &:focus+.modal-close-btn,
     &:hover+.modal-close-btn {
         fill: var(--focus-color-blue);
     }

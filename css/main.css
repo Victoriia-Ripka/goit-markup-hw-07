@@ -766,7 +766,7 @@ body {
 .modal-close:focus, .modal-close:hover {
   border: 1px solid var(--focus-color-blue);
 }
-.modal-close:focus + .modal-close-btn .modal-close:hover + .modal-close-btn {
+.modal-close:focus + .modal-close-btn, .modal-close:hover + .modal-close-btn {
   fill: var(--focus-color-blue);
 }
 
