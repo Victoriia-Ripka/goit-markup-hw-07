@@ -801,11 +801,14 @@ body {
 .modal-input__label .modal-input__span {
   width: 16px;
   height: 15px;
+  display: flex;
   border: 2px solid;
   border-color: #212121;
   border-radius: 2px;
   margin-left: 15px;
   margin-right: 10px;
+  justify-content: center;
+  align-items: center;
 }
 .modal-input__label:focus-within + input, .modal-input__label:focus-within + textarea {
   border: 1px solid var(--focus-color-blue);

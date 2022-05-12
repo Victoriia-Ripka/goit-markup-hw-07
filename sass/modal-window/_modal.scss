@@ -67,7 +67,7 @@
     .modal-input__span {
         width: 16px;
         height: 15px;
-        // display: flex;
+        display: flex;
     
         border: 2px solid;
         border-color: #212121;
@@ -75,8 +75,8 @@
         margin-left: 15px;
         margin-right: 10px;
     
-        // justify-content: center;
-        // align-items: center;
+        justify-content: center;
+        align-items: center;
     }
 
     &:focus-within+input,
